@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>View Dogs</title>
+<link rel="stylesheet" type="text/css"
+th:href = "@{/CSS/style.css}"/>
+</head>
+<h1>Sheridan Dog Show</h1>
+<ul>
+  <li><a th:href="@{/}">Home</a></li>
+  <li><a th:href="@{/register}">Register</a></li>
+  <li><a th:href="@{/view}">View Dogs</a></li>
+  <li><a th:href="@{/show}">Show List</a></li>
+</ul>
+<br>
+<body>
+<div>
+<table class="tabelStyle" id="centre">
+	<thead>
+	<tr>
+		<th>Entry Number</th>
+		<th>Name</th>
+		<th>Owner Name</th>
+		<th>Breed</th>
+		<th>Gender</th>
+		<th>Class</th>
+		<th>EDIT</th>
+		<th>DELETE</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr th:each="dog : ${dogs}">
+		<td th:text = "${dog.entryNumber}"></td>
+		<td th:text = "${dog.name}"></td>
+		<td th:text = "${dog.ownerName}"></td>
+		<td th:text = "${dog.breed}"></td>
+		<td th:text = "${dog.gender}"></td>
+		<td th:text = "${dog.special}"></td>
+		<td><a id="text1" th:href="@{/edit/{entryNumber}(entryNumber=${dog.entryNumber})}">EDIT</a></td>
+		<td><a id="text1" th:href="@{/delete/{entryNumber}(entryNumber=${dog.entryNumber})}">DELETE</a></td>
+	</tr>
+	</tbody>
+</table><br><br>
+</div>
+<a th:href="@{/register}" class="button1" id="centreButton">Register Another Dog</a><br>
+<a th:href="@{/show}" class="button1" id="centreButton">Show List</a>
+<br>
+
+</body>
+</html>

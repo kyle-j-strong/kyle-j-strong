@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<link rel="stylesheet" type="text/css"
+th:href = "@{/CSS/style.css}"/>
+</head>
+<h1>Sheridan Dog Show</h1>
+<ul>
+  <li><a th:href="@{/}">Home</a></li>
+  <li><a th:href="@{/register}">Register</a></li>
+  <li><a th:href="@{/view}">View Dogs</a></li>
+  <li><a th:href="@{/show}">Show List</a></li>
+</ul>
+<body>
+<h2>Register Your Dog</h2><br>
+<div>
+<form th:action="@{/save}" th:object="${dog}" class="centre2">
+<input type="hidden" th:field="*{entryNumber}">
+Name:  <input type="text" th:field="*{name}"><br>
+Owner Name: <input type="text" th:field="*{ownerName}"><br>
+Breed:  <select th:field="*{breed}">
+			<option th:each="b : ${breeds}" th:value="${b.id}" th:text="${b.breed}"/>
+		</select><br>
+Gender:  <select th:field="*{gender}">
+			<option th:each="g : *{genders}" th:value="${g}" th:text="${g}"/>
+		</select><br>
+Class / Specialty:  <select th:field="*{special}">
+			<option th:each="s : *{specials}" th:value="${s}" th:text="${s}"/>
+		</select><br>
+<input type="submit" name="enter" class="button2"><br><br><br><br>
+</form>
+</div>
+<a th:href="@{/view}" class="button1" id="centreButton">View Dogs</a><br>
+<a th:href="@{/breed}" class="button1" id="centreButton">Add Breeds</a>
+
+</body>
+</html>

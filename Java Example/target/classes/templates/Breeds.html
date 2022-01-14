@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Breeds</title>
+<link rel="stylesheet" type="text/css"
+th:href = "@{/CSS/style.css}"/>
+</head>
+<h1>Sheridan Dog Show</h1>
+<ul>
+  <li><a th:href="@{/}">Home</a></li>
+  <li><a th:href="@{/register}">Register</a></li>
+  <li><a th:href="@{/view}">View Dogs</a></li>
+  <li><a th:href="@{/show}">Show List</a></li>
+</ul><br><br>
+<body>
+<form th:action="@{/addBreed}" th:object="${breed}" id="centre">
+Add Breed:  <input type="text" name="breed"><br>
+<input type="submit" name="Add Breed"class = "button2" id="centre">
+</form><br><br>
+<a th:href="@{/register}" class="button3" id="centreButton">Register Dog</a>
+
+</body>
+</html>

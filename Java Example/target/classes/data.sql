@@ -1,0 +1,60 @@
+INSERT INTO dog_table (name, ownerName, breed, gender, special) VALUES
+('Hulk', 'Bryan', 'Golden Retriever','Male', 'Specialty'),
+('IronMan', 'Brian', 'Golden Retriever','Male', 'Specialty'),
+('Thor', 'Jim', 'Golden Retriever','Female', 'Specialty'),
+('Widow', 'Jimmy', 'Golden Retriever','Male', 'Specialty'),
+('Stark', 'Tony', 'Golden Retriever','Male', 'Specialty'),
+('Strange', 'Jimmy', 'Beagle','Male', 'Class'),
+('Peter', 'John', 'Beagle','Male', 'Class'),
+('Parker', 'Jane', 'Beagle','Female', 'Class'),
+('Panther', 'Kyle', 'Beagle','Female', 'Class'),
+('Wakanda', 'Kylie', 'Husky','Male', 'Class'),
+('Amy', 'Matt', 'Husky','Male', 'Specialty'),
+('Jake', 'Pops', 'Husky','Female', 'Class'),
+('Terry', 'Holt', 'Husky','Male', 'Class'),
+('Hitch', 'Kylie', 'Husky','Male', 'Class'),
+('Doggo', 'Terry', 'Husky','Male', 'Specialty'),
+('Gio', 'Terry', 'Poodle','Male', 'Specialty'),
+('Poppa', 'Kenz', 'Poodle','Female', 'Specialty'),
+('Captain', 'Sue', 'Poodle','Female', 'Class'),
+('Sargeant', 'Kenz', 'Poodle','Male', 'Specialty'),
+('Cop', 'Graham', 'Corgi','Female', 'Specialty'),
+('Heya', 'Graham', 'Corgi','Male', 'Specialty'), --20
+('Frodo', 'Rosie', 'Corgi','Female', 'Class'),
+('Golum', 'John', 'Corgi','Female', 'Specialty'),
+('Sam', 'Gary', 'Bulldog','Female', 'Specialty'),
+('Jerry', 'Gari', 'Bulldog','Female', 'Class'),
+('Gandolf', 'Garie', 'Bulldog','Male', 'Class'),
+('Mordor', 'Gar', 'Bulldog','Male', 'Class'),
+('Sauron', 'Sim', 'Bulldog','Male', 'Class'),
+('Gordon', 'Nate', 'Foxhound','Male', 'Class'),
+('Batman', 'Nates', 'Foxhound','Female', 'Class'),
+('Superman', 'Nate', 'Foxhound','Male', 'Specialty'),
+('Catwoman', 'Nathan', 'Foxhound','Male', 'Class'),
+('Aqua', 'Holty', 'Lab','Male', 'Class'),
+('Storm', 'Syd', 'Lab','Male', 'Specialty'),
+('Stormy', 'Sydney', 'Lab','Male', 'Specialty'),
+('Stormzi', 'Sydy', 'Lab','Female', 'Specialty'),
+('Ed', 'Sap', 'Lab','Male', 'Class'),
+('Sheeran', 'Sydski', 'Lab','Male', 'Specialty'),
+('Weeknd', 'Syd', 'Lab','Male', 'Specialty'),
+('Arkell', 'Brendan', 'Bloodhound','Male', 'Class'),
+('Pie', 'Brenda', 'Bloodhound','Male', 'Class'),
+('Disco', 'Brendy', 'German Shepherd','Male', 'Class');
+
+INSERT INTO breed_table (breed) VALUES
+('Golden Retreiever'),
+('Corgi'),
+('Beagle'),
+('Lab'),
+('Husky'),
+('Poodle'),
+('Bloodhound'),
+('Foxhound'),
+('Bulldog'),
+('German Shepherd');
+
+
+
+
+

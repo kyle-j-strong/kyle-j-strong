@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" type="text/css"
+th:href = "@{/CSS/style.css}"/>
+</head>
+<h1>Sheridan Dog Show</h1>
+<ul>
+  <li><a th:href="@{/}">Home</a></li>
+  <li><a th:href="@{/register}">Register</a></li>
+  <li><a th:href="@{/view}">View Dogs</a></li>
+  <li><a th:href="@{/show}">Show List</a></li>
+</ul>
+<body>
+<h2>Welcome Contestants!</h2>
+<img src="https://static01.nyt.com/images/2020/02/11/science/11DOGSHOW-VETS-promo/11DOGSHOW-VETS-agility1-videoSixteenByNineJumbo1600.jpg" 
+	 class="centre" id="centre">
+<br>
+<br>
+<a th:href="@{/register}" class="button1" id="centreButton">Register Your Dog</a><br>
+</body>
+</html>
